@@ -4,13 +4,24 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-
+var ball = 60
+var bplacex = 140
+var bplacey = 360
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
   background(255,255,255,0);
   
+  fill (255, 255, 255)
+ellipse (130, 290, 40, 40)
+
+
+  fill(255,0,0)
+ellipse(bplacex,bplacey,ball,ball);
+
+bplacex = bplacex + 3
+
 
 
 
