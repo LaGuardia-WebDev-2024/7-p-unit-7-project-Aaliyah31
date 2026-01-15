@@ -8,7 +8,8 @@ var ball = 60
 var bplacex = 170
 var bplacey = 360
 var legx = 0
-var legy = 0
+var legy = 0 
+var emojiballsy = -20;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -37,36 +38,37 @@ ellipse(bplacex,bplacey,ball,ball); //ball
 
 //balls
 textSize(50);
-text("⚽️", 5, 0);
-text("🏀", 30, 0);
-text("🥎", 60, 0);
-text("⚾️", 90, 0);
-text("🎾", 120, 0);
-text("🏐", 150, 0);
-text("🏈", 180, 0);
-text("⚽️", 210, 0);
-text("⚽️", 240, 0);
-text("⚽️", 270, 0);
-text("⚽️", 300, 0);
-text("⚽️", 330, 0);
-text("⚽️", 360, 0);
-text("⚽️", 390, 0);
-text("⚽️", 420, 0);
-text("⚽️", 450, 0);
-text("⚽️", 480, 0);
-text("⚽️", 510, 0);
-text("⚽️", 540, 0);
-text("⚽️", 570, 0);
+text("🏈", 0, emojiballsy-160);
+text("⚽️", 5, emojiballsy-40);
+text("🏀", 30, emojiballsy-90);
+text("🥎", 60, emojiballsy-15);
+text("🏐", 90, emojiballsy-140);
+text("🎾", 120, emojiballsy-50);
+text("⚾️", 150, emojiballsy+5);
+text("🏈", 180, emojiballsy-87);
+text("⚽️", 210, emojiballsy);
+text("🏀", 240, emojiballsy-160);
+text("🥎", 270, emojiballsy-75);
+text("🏐", 300, emojiballsy-10);
+text("🎾", 340, emojiballsy-120);
+text("⚾️", 360, emojiballsy-25);
+text("🏈", 405, emojiballsy-110);
+text("⚽️", 420, emojiballsy+15);
+text("🏀", 458, emojiballsy-30);
+text("🥎", 480, emojiballsy-200);
+text("🏐", 510, emojiballsy-96);
+text("🎾", 540, emojiballsy-56);
+text("⚾️", 570, emojiballsy-126);
 
 
 
 
 if(legx == 10){bplacex = bplacex + 3}
 
-if(bplacex > 400){
+if(bplacex > 300){emojiballsy = emojiballsy +3}
   
 
-}
+
 
 
   //Show x y values when mousepressed
